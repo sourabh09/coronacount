@@ -1,6 +1,6 @@
 
 body{
-	background-color: #4A4D54;
+	background-color: #000;
 }
 
 .mdl-button{
@@ -19,18 +19,22 @@ font-family: 'Space Mono', monospace;
 header{
 background-color:#000;
 font-size:2em;
-padding:15px;
-color: #FFF;
+padding:22px;
 margin-bottom:10px;
-text-align: center;
-font-family: 'Sriracha', cursive;
+text-align: left;
+font-family: 'Bebas Neue', cursive;
+color: #f0002f;
 }
 
+ .dummy{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
 .number{
-  margin: 22px;
   border: 1px;
-  padding: 12px;
-  background-color: #4A4D54;
+  padding: 8px;
   border-radius: 10px;
   color: #FFF;
   font-size: 18px;
@@ -39,21 +43,40 @@ font-family: 'Sriracha', cursive;
  -webkit-box-shadow: 4px 3px 36px 10px rgba(0,0,0,0.57);
 -moz-box-shadow: 4px 3px 36px 10px rgba(0,0,0,0.57);
 box-shadow: 4px 3px 36px 10px rgba(0,0,0,0.57);
-}
-.number>h3{
-  font-family: 'Space Mono', monospace;
-  font-size: 30px;
-  margin: 12px;
 
 }
-.count{
+.number>h3{
+  font-family: 'Bebas Neue', cursive;
   font-size: 40px;
+  margin: 12px;
+  color: #f0002f;}
+
+.number>span{
+letter-spacing: 3px;
+}
+.count{
+  font-size: 54px;
+  font-family: 'Bebas Neue', cursive;
 }
 .refreshbutton{
   text-align: center;
   margin-top: 40px;
   display: none;
+  color: #f0002f;
+  
+}
+#Addplace{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 25px;
+    cursor: pointer;
+}
+#refreshbutton{
+  font-size: 40px;
 }
 .info{
+
   min-height: 60px;
 }
