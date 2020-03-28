@@ -8,9 +8,9 @@
   <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
- <link href="https://fonts.googleapis.com/css?family=Space+Mono|Sriracha&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Space+Mono|Bebas+Neue&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-amber.min.css" />
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-amber.min.css" />
   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- <link rel="shortcut icon" type="image/png" href="iss.png"> -->
@@ -21,14 +21,16 @@
 </head>
 <body onload="getStatus()">
 <header>Corona count</header>
+<div class="dummy">
+          <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+        </div>
 <!-- <div id="shiva"><span class="count">200</span></div> -->
 <div class="root"></div>
 
  <div class="refreshbutton">
- <button id="refreshbutton" onclick="getStatus()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-  <i class="material-icons">refresh</i> Refresh
-</button>
+   <i id="refreshbutton" onclick="getStatus()" class="material-icons">refresh</i>
 </div>
+
 <div class="info"></div>
 
 </body>
